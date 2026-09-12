@@ -1,0 +1,448 @@
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    position: relative;
+
+    width: 100%;
+
+    padding: 70px 25px 25px;
+
+    background:
+        radial-gradient(circle at 20% 10%,
+            rgba(21, 153, 255, 0.06),
+            transparent 30%),
+        #091217;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+
+    overflow: hidden;
+}
+
+.footer-container {
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+
+/* =========================
+   FOOTER TOP
+========================= */
+
+.footer-top {
+    display: grid;
+
+    grid-template-columns: 1.5fr 0.7fr 1fr;
+
+    gap: 80px;
+
+    padding-bottom: 50px;
+}
+
+
+/* =========================
+   BRAND
+========================= */
+
+.footer-brand {
+    max-width: 350px;
+}
+
+.footer-logo {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    margin-bottom: 18px;
+
+    text-decoration: none;
+}
+
+.footer-logo-icon {
+    color: #168cf4;
+
+    font-family: Georgia, serif;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    font-style: italic;
+}
+
+.footer-logo-name {
+    color: #ffffff;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 22px;
+
+    font-weight: 700;
+}
+
+.footer-brand>p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.42);
+
+    font-size: 11px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+.footer-status {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 20px;
+
+    color: rgba(255, 255, 255, 0.5);
+
+    font-size: 9px;
+
+    font-weight: 600;
+}
+
+.footer-status span {
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: #35d07f;
+
+    box-shadow:
+        0 0 0 3px rgba(53, 208, 127, 0.08),
+        0 0 10px rgba(53, 208, 127, 0.3);
+}
+
+
+/* =========================
+   FOOTER HEADINGS
+========================= */
+
+.footer-links h3,
+.footer-contact h3 {
+    margin: 5px 0 20px;
+
+    color: #ffffff;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+/* =========================
+   QUICK LINKS
+========================= */
+
+.footer-links {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 10px;
+}
+
+.footer-links a {
+    position: relative;
+
+    color: rgba(255, 255, 255, 0.42);
+
+    text-decoration: none;
+
+    font-size: 10px;
+
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #168cf4;
+
+    transform: translateX(4px);
+}
+
+
+/* =========================
+   FOOTER CONTACT
+========================= */
+
+.footer-contact>a {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: rgba(255, 255, 255, 0.48);
+
+    text-decoration: none;
+
+    font-size: 10px;
+
+    transition: color 0.3s ease;
+}
+
+.footer-contact>a svg {
+    color: #168cf4;
+
+    font-size: 12px;
+}
+
+.footer-contact>a:hover {
+    color: #ffffff;
+}
+
+
+/* =========================
+   SOCIAL
+========================= */
+
+.footer-social {
+    display: flex;
+
+    gap: 8px;
+
+    margin-top: 20px;
+}
+
+.footer-social a {
+    width: 33px;
+    height: 33px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: rgba(255, 255, 255, 0.55);
+
+    background: rgba(255, 255, 255, 0.035);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #ffffff;
+
+    background: linear-gradient(135deg,
+            #1599ff,
+            #7045f6);
+
+    border-color: transparent;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.footer-divider {
+    width: 100%;
+
+    height: 1px;
+
+    background: rgba(255, 255, 255, 0.07);
+}
+
+
+/* =========================
+   FOOTER BOTTOM
+========================= */
+
+.footer-bottom {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    min-height: 65px;
+
+    gap: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.3);
+
+    font-size: 9px;
+}
+
+.footer-made span {
+    color: #168cf4;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   BACK TO TOP
+========================= */
+
+.back-to-top {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-left: auto;
+
+    color: #ffffff;
+
+    background: linear-gradient(135deg,
+            #1599ff,
+            #7045f6);
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 11px;
+
+    transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 8px 20px rgba(21, 153, 255, 0.2);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 850px) {
+
+    .footer {
+        padding: 60px 20px 20px;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 45px;
+    }
+
+    .footer-brand {
+        max-width: 100%;
+    }
+
+    .footer-contact {
+        grid-column: span 2;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .footer {
+        padding: 55px 18px 18px;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        padding-bottom: 35px;
+    }
+
+    .footer-contact {
+        grid-column: auto;
+    }
+
+    .footer-logo-name {
+        font-size: 19px;
+    }
+
+    .footer-logo-icon {
+        font-size: 27px;
+    }
+
+    .footer-brand>p {
+        font-size: 10px;
+    }
+
+    .footer-bottom {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        padding: 15px 0;
+
+        text-align: center;
+    }
+
+    .footer-bottom p {
+        width: 100%;
+    }
+
+    .back-to-top {
+        margin: 5px auto 0;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+    .footer {
+        padding: 45px 14px 15px;
+    }
+
+    .footer-top {
+        gap: 30px;
+    }
+
+    .footer-bottom p {
+        font-size: 8px;
+    }
+}

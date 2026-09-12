@@ -1,0 +1,896 @@
+/* ========================================
+   ABOUT SECTION
+======================================== */
+
+.about {
+    width: 100%;
+
+    position: relative;
+
+    padding: 110px 0;
+
+    background:
+        radial-gradient(circle at 10% 50%,
+            rgba(21, 153, 255, 0.06),
+            transparent 30%),
+        #101b21;
+
+    overflow: hidden;
+}
+
+
+/* ========================================
+   CONTAINER
+======================================== */
+
+.about-container {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 0 25px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 80px;
+}
+
+
+/* ========================================
+   SECTION TITLE
+======================================== */
+
+.section-small-title {
+    margin: 0 0 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: #168cf4;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+}
+
+.section-small-title span {
+    width: 30px;
+
+    height: 2px;
+
+    display: inline-block;
+
+    background: linear-gradient(90deg,
+            #1599ff,
+            #7045f6);
+
+    border-radius: 10px;
+}
+
+
+/* ========================================
+   MAIN HEADING
+======================================== */
+
+.about-content h2 {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: clamp(38px, 4vw, 56px);
+
+    line-height: 1.15;
+
+    font-weight: 800;
+
+    letter-spacing: -2px;
+
+    color: #ffffff;
+}
+
+.about-content h2 span {
+    display: inline;
+
+    background: linear-gradient(90deg,
+            #1599ff,
+            #7045f6);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* ========================================
+   ABOUT TEXT
+======================================== */
+
+.about-text {
+    max-width: 590px;
+
+    margin: 22px 0 0;
+
+    color: rgba(245, 245, 245, 0.62);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   HIGHLIGHTS
+======================================== */
+
+.about-highlights {
+    margin-top: 28px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+.about-highlight {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    font-size: 13px;
+
+    transition: all 0.3s ease;
+}
+
+.about-highlight svg {
+    flex-shrink: 0;
+
+    color: #168cf4;
+
+    font-size: 13px;
+}
+
+.about-highlight:hover {
+    color: #ffffff;
+
+    transform: translateX(5px);
+}
+
+
+.personal-info {
+    margin-top: 28px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 11px;
+
+    max-width: 480px;
+}
+
+.info-row {
+    display: grid;
+
+    grid-template-columns: 32px 70px 1fr;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.info-icon {
+    width: 27px;
+    height: 27px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #168cf4;
+
+    border-radius: 50%;
+
+    color: #168cf4;
+
+    font-size: 12px;
+
+    background: rgba(22, 140, 244, 0.04);
+
+    transition: all 0.3s ease;
+}
+
+.info-row:hover .info-icon {
+    color: #ffffff;
+
+    background: linear-gradient(135deg,
+            #1599ff,
+            #7045f6);
+
+    transform: scale(1.08);
+}
+
+.info-row strong {
+    color: #ffffff;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+.info-row span {
+    color: rgba(255, 255, 255, 0.55);
+
+    font-size: 12px;
+
+    white-space: nowrap;
+}
+
+
+/* ========================================
+   RESUME BUTTON
+======================================== */
+
+.about-resume-btn {
+    margin-top: 32px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 12px 22px;
+
+    border-radius: 24px;
+
+    text-decoration: none;
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    background: linear-gradient(90deg,
+            #1599ff,
+            #7045f6);
+
+    border: 1px solid transparent;
+
+    transition: all 0.3s ease;
+}
+
+.about-resume-btn svg {
+    font-size: 12px;
+
+    transition: transform 0.3s ease;
+}
+
+.about-resume-btn:hover {
+    color: #ffffff;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 30px rgba(22, 140, 244, 0.25);
+}
+
+.about-resume-btn:hover svg {
+    transform: translateY(2px);
+}
+
+
+/* ========================================
+   RIGHT VISUAL
+======================================== */
+
+.about-visual {
+    min-height: 470px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* ========================================
+   BACKGROUND GLOW
+======================================== */
+
+.about-glow {
+    position: absolute;
+
+    width: 330px;
+    height: 330px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(135deg,
+            rgba(21, 153, 255, 0.15),
+            rgba(112, 69, 246, 0.16));
+
+    filter: blur(70px);
+
+    animation: aboutGlow 5s ease-in-out infinite;
+}
+
+@keyframes aboutGlow {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+}
+
+
+/* ========================================
+   DEVELOPER CARD
+======================================== */
+
+.developer-card {
+    width: 440px;
+
+    position: relative;
+
+    z-index: 2;
+
+    padding: 28px;
+
+    border-radius: 18px;
+
+    background: rgba(17, 29, 37, 0.9);
+
+    border: 1px solid rgba(22, 140, 244, 0.2);
+
+    box-shadow:
+        0 30px 70px rgba(0, 0, 0, 0.4),
+        0 0 45px rgba(22, 140, 244, 0.06);
+
+    backdrop-filter: blur(15px);
+
+    transition: all 0.4s ease;
+}
+
+.developer-card:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(22, 140, 244, 0.5);
+
+    box-shadow:
+        0 35px 80px rgba(0, 0, 0, 0.45),
+        0 0 45px rgba(22, 140, 244, 0.12);
+}
+
+
+/* ========================================
+   CARD TOP
+======================================== */
+
+.developer-card-top {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding-bottom: 22px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.developer-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 14px;
+
+    color: #ffffff;
+
+    font-size: 22px;
+
+    background: linear-gradient(135deg,
+            #1599ff,
+            #7045f6);
+
+    box-shadow:
+        0 10px 25px rgba(22, 140, 244, 0.2);
+}
+
+.developer-card-top h3 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 20px;
+
+    font-weight: 700;
+}
+
+.developer-card-top p {
+    margin: 5px 0 0;
+
+    color: rgba(255, 255, 255, 0.45);
+
+    font-size: 12px;
+}
+
+
+/* ========================================
+   TECH STACK
+======================================== */
+
+.tech-stack {
+    padding-top: 22px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+.tech-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.025);
+
+    border: 1px solid transparent;
+
+    transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+    background: rgba(22, 140, 244, 0.06);
+
+    border-color: rgba(22, 140, 244, 0.18);
+
+    transform: translateX(5px);
+}
+
+.tech-icon {
+    width: 38px;
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 9px;
+
+    color: #168cf4;
+
+    background: rgba(22, 140, 244, 0.1);
+
+    font-size: 15px;
+}
+
+.tech-item h4 {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.9);
+
+    font-size: 13px;
+}
+
+.tech-item p {
+    margin: 4px 0 0;
+
+    color: rgba(255, 255, 255, 0.4);
+
+    font-size: 10px;
+}
+
+
+/* ========================================
+   STATUS
+======================================== */
+
+.developer-status {
+    margin-top: 22px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: rgba(255, 255, 255, 0.5);
+
+    font-size: 11px;
+}
+
+.status-dot {
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: #4ade80;
+
+    box-shadow:
+        0 0 10px rgba(74, 222, 128, 0.7);
+
+    animation: statusPulse 2s infinite;
+}
+
+@keyframes statusPulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+}
+
+
+/* ========================================
+   FLOATING CARDS
+======================================== */
+
+.about-floating-card {
+    position: absolute;
+
+    z-index: 4;
+
+    min-width: 85px;
+
+    padding: 12px 15px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: rgba(16, 27, 34, 0.92);
+
+    border: 1px solid rgba(22, 140, 244, 0.25);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.3);
+
+    backdrop-filter: blur(10px);
+
+    animation: floatingCard 4s ease-in-out infinite;
+}
+
+.about-floating-card strong {
+    color: #168cf4;
+
+    font-size: 17px;
+}
+
+.about-floating-card span {
+    margin-top: 3px;
+
+    color: rgba(255, 255, 255, 0.45);
+
+    font-size: 9px;
+}
+
+.card-one {
+    top: 55px;
+    left: 15px;
+}
+
+.card-two {
+    top: 170px;
+    right: 0;
+
+    animation-delay: 1s;
+}
+
+.card-three {
+    bottom: 55px;
+    left: 35px;
+
+    animation-delay: 2s;
+}
+
+@keyframes floatingCard {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-9px);
+    }
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+    .about {
+        padding: 90px 0;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+
+        text-align: center;
+    }
+
+    .section-small-title {
+        justify-content: center;
+    }
+
+    .about-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-highlights {
+        max-width: 600px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: left;
+    }
+
+    .about-resume-btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-visual {
+        min-height: 450px;
+    }
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+
+    .about {
+        padding: 75px 0;
+    }
+
+    .about-container {
+        padding: 0 18px;
+
+        gap: 45px;
+    }
+
+    .about-content h2 {
+        font-size: 40px;
+
+        letter-spacing: -1px;
+    }
+
+    .about-text {
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+    .about-highlights {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+
+        padding: 0 10px;
+    }
+
+    .about-highlight {
+        font-size: 12px;
+    }
+
+    .personal-info {
+        max-width: 100%;
+
+        text-align: left;
+
+        padding: 0 10px;
+    }
+
+    .info-row {
+        grid-template-columns: 32px 70px 1fr;
+
+        gap: 8px;
+    }
+
+    .info-row strong {
+        font-size: 11px;
+    }
+
+    .info-row span {
+        font-size: 11px;
+    }
+
+    .about-visual {
+        min-height: 370px;
+    }
+
+    .developer-card {
+        width: 95%;
+
+        padding: 20px;
+    }
+
+    .developer-card-top h3 {
+        font-size: 17px;
+    }
+
+    .tech-item {
+        padding: 10px;
+    }
+
+    .tech-item p {
+        font-size: 9px;
+    }
+
+    .about-floating-card {
+        min-width: 70px;
+
+        padding: 9px 10px;
+    }
+
+    .about-floating-card strong {
+        font-size: 14px;
+    }
+
+    .about-floating-card span {
+        font-size: 8px;
+    }
+
+    .card-one {
+        top: 25px;
+        left: -3px;
+    }
+
+    .card-two {
+        top: 130px;
+        right: -3px;
+    }
+
+    .card-three {
+        bottom: 20px;
+        left: 5px;
+    }
+}
+
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 450px) {
+
+    .about-container {
+        padding: 0 14px;
+    }
+
+    .about-content h2 {
+        font-size: 34px;
+    }
+
+    .about-text {
+        font-size: 13px;
+    }
+
+    .about-resume-btn {
+        width: 100%;
+    }
+
+    .about-visual {
+        min-height: 330px;
+    }
+
+    .developer-card {
+        width: 100%;
+
+        padding: 17px;
+    }
+
+    .developer-icon {
+        width: 45px;
+        height: 45px;
+
+        font-size: 18px;
+    }
+
+    .developer-card-top {
+        gap: 10px;
+    }
+
+    .developer-card-top h3 {
+        font-size: 15px;
+    }
+
+    .developer-card-top p {
+        font-size: 10px;
+    }
+
+    .tech-stack {
+        gap: 10px;
+    }
+
+    .tech-item {
+        gap: 10px;
+    }
+
+    .tech-icon {
+        width: 32px;
+        height: 32px;
+
+        font-size: 12px;
+    }
+
+    .tech-item h4 {
+        font-size: 11px;
+    }
+
+    .tech-item p {
+        font-size: 8px;
+    }
+
+    .about-floating-card {
+        display: none;
+    }
+}

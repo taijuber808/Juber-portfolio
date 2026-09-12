@@ -1,0 +1,853 @@
+/* ========================================
+   HERO SECTION
+======================================== */
+
+.hero {
+  width: 100%;
+  min-height: calc(100vh - 72px);
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    radial-gradient(circle at 80% 45%,
+      rgba(91, 60, 220, 0.15),
+      transparent 32%),
+    radial-gradient(circle at 15% 70%,
+      rgba(21, 153, 255, 0.08),
+      transparent 30%),
+    #0d171d;
+
+  overflow: hidden;
+}
+
+
+/* ========================================
+   CONTAINER
+======================================== */
+
+.hero-container {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: auto;
+
+  padding: 80px 25px;
+
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+
+  align-items: center;
+
+  gap: 60px;
+}
+
+
+/* ========================================
+   LEFT CONTENT
+======================================== */
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* Small Hello Text */
+
+.hero-small-text {
+  margin: 0 0 18px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  color: #168cf4;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  letter-spacing: 1px;
+}
+
+.hero-small-text span {
+  width: 32px;
+  height: 2px;
+
+  display: inline-block;
+
+  background: linear-gradient(90deg,
+      #1599ff,
+      #7045f6);
+
+  border-radius: 10px;
+}
+
+
+/* ========================================
+   NAME
+======================================== */
+
+.hero-content h1 {
+  margin: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: clamp(55px, 7vw, 88px);
+
+  line-height: 1;
+
+  font-weight: 800;
+
+  letter-spacing: -3px;
+
+  background: linear-gradient(90deg,
+      #ffffff,
+      #dcecff);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* ========================================
+   JOB TITLE
+======================================== */
+
+.hero-content h2 {
+  margin: 25px 0 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: clamp(24px, 3vw, 36px);
+
+  line-height: 1.3;
+
+  font-weight: 700;
+
+  color: #168cf4;
+}
+
+.hero-content h2 span {
+  color: #7045f6;
+}
+
+
+/* ========================================
+   DESCRIPTION
+======================================== */
+
+.hero-description {
+  max-width: 590px;
+
+  margin: 25px 0 0;
+
+  color: rgba(245, 245, 245, 0.68);
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+}
+
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+.hero-buttons {
+  margin-top: 35px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+
+  flex-wrap: wrap;
+}
+
+
+/* Primary */
+
+.hero-primary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 13px 23px;
+
+  border-radius: 25px;
+
+  text-decoration: none;
+
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  background: linear-gradient(90deg,
+      #1599ff,
+      #7045f6);
+
+  border: 1px solid transparent;
+
+  transition: all 0.3s ease;
+}
+
+.hero-primary-btn svg {
+  font-size: 13px;
+
+  transition: transform 0.3s ease;
+}
+
+.hero-primary-btn:hover {
+  color: #ffffff;
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 10px 30px rgba(21, 153, 255, 0.25);
+}
+
+.hero-primary-btn:hover svg {
+  transform: translateX(4px);
+}
+
+
+/* Secondary */
+
+.hero-secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 23px;
+
+  border-radius: 25px;
+
+  text-decoration: none;
+
+  color: #168cf4;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  border: 1px solid rgba(22, 140, 244, 0.7);
+
+  background: rgba(22, 140, 244, 0.04);
+
+  transition: all 0.3s ease;
+}
+
+.hero-secondary-btn:hover {
+  color: #ffffff;
+
+  background: rgba(22, 140, 244, 0.12);
+
+  border-color: #168cf4;
+
+  transform: translateY(-3px);
+}
+
+
+/* ========================================
+   SOCIAL ICONS
+======================================== */
+
+.hero-social {
+  margin-top: 35px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+}
+
+.hero-social a {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  text-decoration: none;
+
+  color: rgba(255, 255, 255, 0.65);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  background: rgba(255, 255, 255, 0.03);
+
+  transition: all 0.3s ease;
+}
+
+.hero-social a:hover {
+  color: #ffffff;
+
+  border-color: #168cf4;
+
+  background: rgba(22, 140, 244, 0.12);
+
+  transform: translateY(-4px);
+}
+
+
+/* ========================================
+   RIGHT VISUAL
+======================================== */
+
+.hero-visual {
+  min-height: 450px;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* ========================================
+   GLOW
+======================================== */
+
+.hero-glow {
+  position: absolute;
+
+  width: 350px;
+  height: 350px;
+
+  border-radius: 50%;
+
+  background: linear-gradient(135deg,
+      rgba(21, 153, 255, 0.20),
+      rgba(112, 69, 246, 0.20));
+
+  filter: blur(70px);
+
+  animation: glowMove 5s ease-in-out infinite;
+}
+
+@keyframes glowMove {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+
+/* ========================================
+   CODE CARD
+======================================== */
+
+.code-card {
+  width: 440px;
+
+  position: relative;
+  z-index: 2;
+
+  border-radius: 16px;
+
+  overflow: hidden;
+
+  background: rgba(14, 23, 30, 0.88);
+
+  border: 1px solid rgba(22, 140, 244, 0.25);
+
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.45),
+    0 0 50px rgba(22, 140, 244, 0.08);
+
+  backdrop-filter: blur(15px);
+
+  transform: perspective(1000px) rotateY(-5deg);
+
+  transition: all 0.5s ease;
+}
+
+.code-card:hover {
+  transform:
+    perspective(1000px) rotateY(0deg) translateY(-8px);
+
+  border-color: rgba(22, 140, 244, 0.6);
+
+  box-shadow:
+    0 35px 90px rgba(0, 0, 0, 0.5),
+    0 0 45px rgba(22, 140, 244, 0.15);
+}
+
+
+/* ========================================
+   CODE TOP
+======================================== */
+
+.code-top {
+  height: 48px;
+
+  padding: 0 17px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.code-top p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.5);
+
+  font-family: monospace;
+
+  font-size: 12px;
+}
+
+
+/* Dots */
+
+.code-dots {
+  display: flex;
+
+  gap: 6px;
+}
+
+.code-dots span {
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.25);
+}
+
+
+/* ========================================
+   CODE BODY
+======================================== */
+
+.code-body {
+  padding: 28px 30px;
+
+  font-family: "Courier New", monospace;
+
+  font-size: 14px;
+
+  line-height: 1.9;
+}
+
+.code-body p {
+  margin: 0;
+}
+
+.code-indent {
+  padding-left: 25px;
+}
+
+.code-indent-2 {
+  padding-left: 50px;
+}
+
+
+/* Code Colors */
+
+.code-purple {
+  color: #c084fc;
+}
+
+.code-blue {
+  color: #38bdf8;
+}
+
+.code-key {
+  color: #60a5fa;
+}
+
+.code-green {
+  color: #86efac;
+}
+
+.code-comment {
+  margin-top: 15px !important;
+
+  color: rgba(255, 255, 255, 0.35);
+}
+
+
+/* ========================================
+   FLOATING TECH BADGES
+======================================== */
+
+.floating-tech {
+  position: absolute;
+
+  z-index: 4;
+
+  padding: 9px 15px;
+
+  border-radius: 20px;
+
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  background: rgba(18, 29, 38, 0.9);
+
+  border: 1px solid rgba(22, 140, 244, 0.35);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+  backdrop-filter: blur(10px);
+
+  animation: floatBadge 4s ease-in-out infinite;
+}
+
+.tech-react {
+  top: 65px;
+  left: 25px;
+}
+
+.tech-node {
+  right: 5px;
+  top: 150px;
+
+  animation-delay: 1s;
+}
+
+.tech-express {
+  bottom: 65px;
+  left: 55px;
+
+  animation-delay: 2s;
+}
+
+.tech-mongo {
+  right: 5px;
+
+  bottom: 20px;
+
+  animation-delay: 3s;
+}
+
+@keyframes floatBadge {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-9px);
+  }
+}
+
+
+/* ========================================
+   SCROLL INDICATOR
+======================================== */
+
+.hero-scroll {
+  position: absolute;
+
+  bottom: 25px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  color: rgba(255, 255, 255, 0.35);
+
+  font-size: 11px;
+}
+
+.hero-scroll span {
+  width: 20px;
+  height: 30px;
+
+  display: block;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  border-radius: 15px;
+
+  position: relative;
+}
+
+.hero-scroll span::after {
+  content: "";
+
+  position: absolute;
+
+  top: 6px;
+  left: 50%;
+
+  width: 3px;
+  height: 6px;
+
+  border-radius: 5px;
+
+  background: #168cf4;
+
+  transform: translateX(-50%);
+
+  animation: scrollDot 1.5s infinite;
+}
+
+@keyframes scrollDot {
+
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 0);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, 10px);
+  }
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+  .hero-container {
+    grid-template-columns: 1fr;
+
+    text-align: center;
+
+    gap: 40px;
+
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+
+  .hero-small-text {
+    justify-content: center;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-social {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    min-height: 400px;
+  }
+
+  .code-card {
+    width: min(440px, 90%);
+  }
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-container {
+    padding: 60px 18px 90px;
+
+    gap: 25px;
+  }
+
+  .hero-small-text {
+    font-size: 15px;
+  }
+
+  .hero-small-text span {
+    width: 25px;
+  }
+
+  .hero-content h1 {
+    font-size: 55px;
+
+    letter-spacing: -2px;
+  }
+
+  .hero-content h2 {
+    margin-top: 20px;
+
+    font-size: 22px;
+
+    line-height: 1.5;
+  }
+
+  .hero-content h2 span {
+    display: block;
+  }
+
+  .hero-description {
+    margin-top: 20px;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+  }
+
+  .hero-buttons {
+    margin-top: 28px;
+
+    gap: 12px;
+  }
+
+  .hero-primary-btn,
+  .hero-secondary-btn {
+    padding: 11px 17px;
+
+    font-size: 12px;
+  }
+
+  .hero-social {
+    margin-top: 28px;
+  }
+
+  .hero-visual {
+    min-height: 340px;
+  }
+
+  .code-card {
+    width: 95%;
+
+    transform: none;
+  }
+
+  .code-body {
+    padding: 22px 18px;
+
+    font-size: 11px;
+
+    line-height: 1.8;
+  }
+
+  .code-indent {
+    padding-left: 15px;
+  }
+
+  .code-indent-2 {
+    padding-left: 30px;
+  }
+
+  .floating-tech {
+    padding: 7px 11px;
+
+    font-size: 10px;
+  }
+
+  .tech-react {
+    top: 25px;
+    left: 0;
+  }
+
+  .tech-node {
+    right: 0;
+    top: 100px;
+  }
+
+  .tech-mongo {
+    right: 5px;
+    left: auto;
+    bottom: 30px;
+    width: auto;
+    max-width: max-content;
+    white-space: nowrap;
+  }
+
+  .hero-scroll {
+    display: none;
+  }
+}
+
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 450px) {
+
+  .hero-container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .hero-content h1 {
+    font-size: 46px;
+  }
+
+  .hero-content h2 {
+    font-size: 19px;
+  }
+
+  .hero-description {
+    font-size: 13px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .hero-primary-btn,
+  .hero-secondary-btn {
+    width: 100%;
+  }
+
+  .hero-visual {
+    min-height: 300px;
+  }
+
+  .code-card {
+    width: 100%;
+  }
+
+  .code-body {
+    font-size: 9px;
+  }
+
+  .code-top {
+    height: 42px;
+  }
+}
