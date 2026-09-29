@@ -96,7 +96,7 @@ const projects = [
     ],
 
     github: "https://github.com/taijuber808/Real-Estate-With-React",
-    live: "https://real-estate-with-react-isx5.vercel.app/",
+    live: "https://real-estate-with-react-ew3i.vercel.app/",
   },
 
   // =====================================================
