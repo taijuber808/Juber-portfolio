@@ -61,7 +61,7 @@ const Contact = () => {
 
             <div className="contact-main-buttons">
               <a
-                href="taijuber808@gmail.com"
+                href="mailto:taijuber808@gmail.com"
                 className="contact-email-btn"
               >
                 <FaEnvelope />

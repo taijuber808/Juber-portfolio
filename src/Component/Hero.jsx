@@ -126,7 +126,7 @@ const Hero = () => {
               </p>
 
               <p className="code-indent-2">
-                <span className="code-green">'Express.js'</span>
+                <span className="code-green">'Express.js'</span>,
               </p>
               <p className="code-indent-2">
                 <span className="code-green">'MongoDB'</span>
